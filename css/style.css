@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(11, 32, 117);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bg-secondary {
+    background: rgb(12, 35, 163) !important;
+    box-shadow: 10px 10px black;
+}
+
+input {
+    padding: 10px;
+}
+
+@media screen and (min-width: 480px) {
+    input {
+        padding: 15px;
+        border-radius: 7px;
+        font-size: 150%;
+    }
+    label {
+        font-size: x-large;
+    }
+    .boton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        width: 330px;
+        margin-left: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .boton {
+        margin-left: 250px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .boton {
+        margin-left: 332px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .boton {
+        margin-left: 393px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .boton {
+        margin-left: 453px;
+    }
+}
