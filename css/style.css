@@ -13,6 +13,10 @@ input {
     padding: 10px;
 }
 
+.invalid-feedback {
+    color: yellow;
+}
+
 @media screen and (min-width: 480px) {
     input {
         padding: 15px;

@@ -11,27 +11,33 @@
 
 <body>
     <div class="container">
-        <h1 class="mt-5 ">Calcula tu Diezmo</h1>
-        <div class="row bg-secondary">
-            <div class="columna col-4 col-md-6 offset-2 offset-md-4 my-4">
+        <form action="" class="was-validated">
+            <h1 class="mt-5 ">Calcula tu Diezmo</h1>
+            <div class="row bg-secondary">
+                <div class="columna col-4 col-md-6 offset-2 offset-md-4 my-4">
 
-                <label class="mt-5" for="">Monto</label>
-                <div>
-                    <input id="monto" type="number">
+                    <label class="mt-5" for="">Monto</label>
+                    <div>
+                        <input id="monto" type="number" placeholder="ej. 500000" required>
+                        <div class="valid-feedback">ok</div>
+                        <div class="invalid-feedback">Debes rellenar este campo.</div>
+                    </div>
+
+                    <label class="mt-5" for="">Porcentaje %</label>
+                    <div>
+                        <input id="porcentaje" type="number" placeholder="ej. 10" required>
+                        <div class="valid-feedback">ok</div>
+                        <div class="invalid-feedback">Debes rellenar este campo.</div>
+                    </div>
+
+                    <button type="button" onclick="calculo()" class="boton d-flex btn btn-primary btn-lg mt-5">Calcular %</button>
                 </div>
-
-                <label class="mt-5" for="">Porcentaje %</label>
-                <div>
-                    <input id="porcentaje" type="number">
+                <div class="columna col-8 col-md-6 offset-2 offset-md-4 my-4">
+                    <label class="mt-5" for="">Diezmo</label>
+                    <h1 id="diezmo">0</h1>
                 </div>
-
-                <button type="button" onclick="calculo()" class="boton d-flex btn btn-primary btn-lg mt-5">Calcular</button>
             </div>
-            <div class="columna col-8 col-md-6 offset-2 offset-md-4 my-4">
-                <label class="mt-5" for="">Diezmo</label>
-                <h3 id="diezmo">0</h3>
-            </div>
-        </div>
+        </form>
     </div>
 
     <script src="./js/main.js"></script>
