@@ -28,30 +28,26 @@ input {
         align-items: center;
         height: 80px;
         width: 330px;
-        margin-left: 100px;
     }
 }
 
-@media screen and (min-width: 768px) {
-    .boton {
-        margin-left: 250px;
-    }
+
+/* @media screen and (min-width: 768px) {
+    .boton {}
 }
 
 @media screen and (min-width: 992px) {
-    .boton {
-        margin-left: 332px;
-    }
+    .boton {}
 }
 
 @media screen and (min-width: 1200px) {
-    .boton {
-        margin-left: 393px;
-    }
+    .boton {}
 }
 
 @media screen and (min-width: 1400px) {
-    .boton {
-        margin-left: 453px;
-    }
+    .boton {}
 }
+
+.columna {
+    border: 1px solid yellow;
+} */

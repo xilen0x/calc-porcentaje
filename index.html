@@ -11,18 +11,30 @@
 
 <body>
     <div class="container">
-        <h1 class="mt-5 ">Calculadora de ...</h1>
+        <h1 class="mt-5 ">Calcula tu Diezmo</h1>
         <div class="row bg-secondary">
-            <div class="col-4 col-md-6 offset-2 offset-md-4 my-4">
+            <div class="columna col-4 col-md-6 offset-2 offset-md-4 my-4">
+
                 <label class="mt-5" for="">Monto</label>
-                <div><input type="number"></div>
+                <div>
+                    <input id="monto" type="number">
+                </div>
+
                 <label class="mt-5" for="">Porcentaje %</label>
-                <div><input type="number"></div>
+                <div>
+                    <input id="porcentaje" type="number">
+                </div>
+
+                <button type="button" onclick="calculo()" class="boton d-flex btn btn-primary btn-lg mt-5">Calcular</button>
             </div>
-            <button type="button" class="boton d-flex btn btn-primary btn-lg my-4">Calcular</button>
+            <div class="columna col-8 col-md-6 offset-2 offset-md-4 my-4">
+                <label class="mt-5" for="">Diezmo</label>
+                <h3 id="diezmo">0</h3>
+            </div>
         </div>
     </div>
 
+    <script src="./js/main.js"></script>
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
