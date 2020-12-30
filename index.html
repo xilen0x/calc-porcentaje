@@ -11,39 +11,39 @@
 
 <body>
     <div class="container">
-        <form action="" class="was-validated">
-            <h1 class="mt-5 ">Calcula tu Diezmo</h1>
+        <h1 class="mt-5 text-white">Calcula tu Diezmo</h1>
+        <form action="">
             <div class="row bg-secondary">
-                <div class="columna col-4 col-md-6 offset-2 offset-md-4 my-4">
-
-                    <label class="mt-5" for="">Monto</label>
-                    <div>
-                        <input id="monto" type="number" placeholder="ej. 500000" required>
-                        <div class="valid-feedback">ok</div>
-                        <div class="invalid-feedback">Debes rellenar este campo.</div>
+                <div class="columna col-8 col-sm-8 col-md-6 col-lg-6 offset-2 offset-md-4 offset-lg-4 my-4">
+                    <div class="form-group">
+                        <label class="mt-5 text-white">Monto</label><br>
+                        <input class="form-control" id="monto" name="monto" type="number" placeholder="ej. 500000" required>
                     </div>
-
-                    <label class="mt-5" for="">Porcentaje %</label>
-                    <div>
-                        <input id="porcentaje" type="number" placeholder="ej. 10" required>
-                        <div class="valid-feedback">ok</div>
-                        <div class="invalid-feedback">Debes rellenar este campo.</div>
+                    <div class="form-group">
+                        <label class="mt-5 text-white">Porcentaje %</label>
+                        <input class="form-control" id="porcentaje" name="porcentaje" type="number" placeholder="ej. 10" required>
                     </div>
-
-                    <button type="button" onclick="calculo()" class="boton d-flex btn btn-primary btn-lg mt-5">Calcular %</button>
                 </div>
+            </div>
+            <div class="row">
                 <div class="columna col-8 col-md-6 offset-2 offset-md-4 my-4">
-                    <label class="mt-5" for="">Diezmo</label>
-                    <h1 id="diezmo">0</h1>
+                    <label class="my-2 text-white">Resultado</label>
+                    <h1 class="text-white bg-secondary" id="diezmo">0</h1>
+                    <button type="submit" class="boton d-flex btn-block btn-primary btn-lg mt-5">Calcular %</button>
                 </div>
             </div>
         </form>
+
     </div>
 
     <script src="./js/main.js"></script>
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./js/validator.min.js"></script>
+    </head>
+
 </body>
 
 </html>
