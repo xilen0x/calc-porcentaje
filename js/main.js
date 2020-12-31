@@ -13,11 +13,9 @@ function calculo() {
     let res = monto * porc;
     document.getElementById('diezmo').innerHTML = res;
     Swal.fire({
-        icon: 'info',
-        title: "Resultado",
-        text: ("El porciento de {}", monto),
-        text: ("es {}", res),
-        grow: "fullscreen"
+        icon: 'success',
+        title: (res),
+        html: "Tu Resultado"
     })
 }
 
